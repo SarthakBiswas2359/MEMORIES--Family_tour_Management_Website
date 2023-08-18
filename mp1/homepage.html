@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="homepage.css" type="text/css">
+<head>
+  <title>#Memories - Family Tour Management</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="text-container">
+      <h1>#Memories</h1>
+    </div>
+  </div>
+
+   <!-- Navbar -->
+   <div class="navbar">
+    <a href="#" class="nav-alert" onclick="nav_alert()">Home</a>
+    <a href="#" class="nav-alert" onclick="nav_alert()">Destination</a>
+    <a href="#" class="nav-alert" onclick="nav_alert()">About Us</a>
+    <a href="#" class="nav-alert" onclick="nav_alert()">Gallery</a>
+  </div>
+
+  <h1 id="welc">Welcome to #Memories!</h1>
+
+  <p class="start">We are thrilled to have you here and embark on an incredible journey of adventure, exploration, and unforgettable moments. At #Memories, we are dedicated to curating the best deals for your family tours, ensuring that you create lifelong memories together.
+    
+    Whether you're seeking a thrilling adventure, a relaxing getaway, or a cultural exploration, we have the perfect packages tailored just for you. But that's not all! We also offer the flexibility to create your own personalized tour, giving you the freedom to design every detail of your dream vacation.
+    
+    Join us on this exciting adventure that awaits you. Pack your bags, leave your worries behind, and get ready to immerse yourself in a world full of awe-inspiring destinations, captivating experiences, and cherished memories.
+    
+    At #Memories, we understand the importance of family and the joy that comes from spending quality time together. That's why our dedicated team works tirelessly to ensure that every aspect of your trip is taken care of, allowing you to focus on creating unforgettable moments with your loved ones.
+    
+    So, whether you're a seasoned traveler or embarking on your very first family tour, we invite you to join us at #Memories and unlock a world of extraordinary experiences. Let us be your guide as we help you create memories that will be treasured for a lifetime.
+    
+    Get ready to embark on an amazing adventure and gather a plethora of precious memories. We can't wait to have you as part of our #Memories family!
+    
+    Start exploring today and let the magic begin!
+    
+    </p>
+  <!-- Card Carousel -->
+  <div class="c-c-cont">
+    <div class="c-carousl" id="cCarousel">
+      <div class="card">
+        <img src="goa.jpg" alt="Destination 1">
+        <h3>Ajay patel</h3>
+        <p>Transportation was comfortable and efficient with timing.
+          The tour portion of the experience was nice for learning a 
+            bit about the history of the Medieval town and the guide
+            was very interactive. I enjoyed having the hour-two hours
+            or so to explore the town freely, the chocolate shops 
+            are fantastic, and an overall lovely day trip that can 
+            accomplished in just a few hours!</p>
+      </div>
+      <div class="card">
+        <img src="paris.jpg" alt="Destination 2">
+        <h3>Anonymous</h3>
+        <p>"Paris is a captivating city, perfect for families! Explore iconic landmarks like the Eiffel Tower, indulge in delicious pastries, and wander through charming neighborhoods. A memorable and enriching experience awaits!"</p>
+      </div>
+      <div class="card">
+        <img src="dehradun.jpg" alt="Destination 2">
+        <h3>Ananya Singh</h3>
+        <p>"My trip to Dehradun was an absolute delight! I thoroughly enjoyed the tour, immersing myself in the beauty of the city. It was a truly memorable experience that I cherish."</p>
+      </div>
+      <div class="card">
+        <img src="kashmir.jpg" alt="Destination 2">
+        <h3>Abhishek </h3>
+        <p>Full adventure experience. The locations were amazing, and the tour guide was great. He took us to the best places for our meals. </p>
+      </div>
+      <div class="card">
+        <img src="mauritius.jpeg".jpg" alt="Destination 2">
+        <h3>Sarthak </h3>
+        <p>It was a great experience for me and my wife. Loved the hotel rooms,the bed was comforting, and the bus was always before time.Taking a lot of #memories back with me.</p>
+      </div>
+      <div class="card">
+        <img src="Udaipur.webp" alt="Destination 2">
+        <h3>Suraj Kumar</h3>
+        <p>Loved the deal. It was a very good experience with the hotel staffs and specially or tour guide. He gave us a lot of insights of the kilaas .</p>
+      </div>
+      <div class="card">
+        <img src="spain.webp" alt="Destination 2">
+        <h3>Kabir </h3>
+        <p>Breathtaking experience , enjoyed so much. The adventure was amazing, specially in para gliding and the Bull Race we got goosebumps but everything was taken care of and taking back a lot of #Memories.</p>
+      </div>
+      <!-- Add more card elements as needed -->
+    </div>
+  </div>
+
+  <div class="log-container">
+    <div class="logform">
+      <h2>Join us now and create #Memories</h2>
+      <a href="login.html"><button>Login</button></a>
+      <a href="signup.html"><button>Sign Up</button></a>
+
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 #Memories. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    
+    
+    function nav_alert(){
+      alert("Please Login or Sign Up to Continue...")
+    }
+
+    const cCarousel = document.getElementById('cCarousel');
+    const cards = cCarousel.getElementsByClassName('card');
+
+    function moveCards() {
+      const cardWidth = cards[0].offsetWidth;
+      cCarousel.style.animationDuration = `${cardWidth / 100}px`;
+
+      const firstCard = cards[0];
+      cCarousel.appendChild(firstCard.cloneNode(true));
+      cCarousel.removeChild(firstCard);
+    }
+
+
+    setInterval(moveCards, 5000);
+  </script>
+</body>
+
+</html>

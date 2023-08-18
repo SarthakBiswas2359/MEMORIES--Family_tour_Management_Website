@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css" type="text/css">
+    <title>signup</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="text-container">
+            <h1>#Memories</h1>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="destination.html">Destination</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+    <div id="div1" class="header" >
+		<h1>#Memories</h1>
+		<h3> Crafting Family Tales That Echo Through Generations.</h3>
+	</div>	
+
+    <div id="div2" class="form">
+		<h2>&emsp;Create an Account </h2>
+		<!-- do this -->
+		<form method="post">
+			 <b>
+				<fieldset>
+					<legend>Personal Details</legend>
+					<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+					First name&nbsp;<font color="red" size="4px">*</font>: &nbsp;&ensp;&nbsp;&ensp;&nbsp; <input type="text" class ="form-control" name="firstname" required><br>
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Last name: &nbsp;&emsp;&emsp;<input type="text"  class="form-control" name="lastname" required><br>
+
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Father's name&nbsp;<font color="red" size="4px">*</font>: &nbsp;&nbsp;&nbsp;<input type="text" class ="form-control" name="fathersname" required><br>
+
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Mother's name&nbsp;<font color="red" size="4px">*</font>: &nbsp;&nbsp;<input type="text" class ="form-control" name="mothersname" required><br>
+
+
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Email&nbsp;<font color="red" size="4px">*</font>:  &emsp;&emsp;&emsp;&emsp;<input type="email" class ="form-control" name="email"  required><br>
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Password: &ensp;&emsp;&emsp;<input type="password" class ="form-control" name="password"  required><br>
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Phone number&nbsp;<font color="red" size="4px">*</font>:&ensp; <input type="number" name="phone" class="form-control"  required><br>
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Date of Birth: &ensp; &emsp;&emsp;<input type="date" class="form-control" name="date" required><br>
+
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;
+					Gender:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="gender" value="Male">Male<br>
+					&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="gender" value="Female">Female<br>
+					&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="gender" value="Others">Others<br>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    Full address: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br><br>
+				
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Family Details</legend>
+                    
+                <label for="numMembers">Number of Family Members:</label>
+                <br><select id="numMembers" name="numMembers" onchange="generateFields()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+                <br><br>
+
+                <div id="memberFields"></div>
+                </fieldset>
+<div class="btn">
+    <div class="in">
+        <a href="home.html"><button>Sign up</button></a>
+    </div>
+</div>
+                
+        </form>
+        <footer>
+            <p>&copy; 2023 #Memories. All rights reserved.</p>
+          </footer>
+        
+
+  <script>
+    function generateFields() {
+      const numMembers = document.getElementById('numMembers').value;
+      const memberFieldsContainer = document.getElementById('memberFields');
+
+      memberFieldsContainer.innerHTML = '';
+
+      for (let i = 1; i <= numMembers; i++) {
+        const nameLabel = document.createElement('label');
+        nameLabel.setAttribute('for', `member${i}Name`); 
+        nameLabel.textContent = `Member ${i} Name:`;
+
+        const nameInput = document.createElement('input');
+        nameInput.setAttribute('type', 'text');
+        nameInput.setAttribute('id', `member${i}Name`);
+        nameInput.setAttribute('name', `member${i}Name`);
+        nameInput.setAttribute('required', '');
+
+        const genderLabel = document.createElement('label');
+        genderLabel.setAttribute('for', `member${i}Gender`);
+        genderLabel.textContent = `Member ${i} Gender:`;
+
+        const genderInput = document.createElement('select');
+        genderInput.setAttribute('id', `member${i}Gender`);
+        genderInput.setAttribute('name', `member${i}Gender`);
+        genderInput.setAttribute('required', '');
+
+        const genderOptions = ['Male', 'Female', 'Other'];
+
+        genderOptions.forEach(option => {
+          const genderOption = document.createElement('option');
+          genderOption.setAttribute('value', option.toLowerCase());
+          genderOption.textContent = option;
+          genderInput.appendChild(genderOption);
+        });
+
+        memberFieldsContainer.appendChild(nameLabel);
+        memberFieldsContainer.appendChild(nameInput);
+        memberFieldsContainer.appendChild(document.createElement('br'));
+        memberFieldsContainer.appendChild(document.createElement('br'));
+        memberFieldsContainer.appendChild(genderLabel);
+        memberFieldsContainer.appendChild(genderInput);
+        memberFieldsContainer.appendChild(document.createElement('br'));
+        memberFieldsContainer.appendChild(document.createElement('br'));
+      }
+    }
+
+    const familyForm = document.getElementById('familyForm');
+
+    familyForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get all the entered member names and genders
+      const numMembers = document.getElementById('numMembers').value;
+
+      const memberData = [];
+
+      for (let i = 1; i <= numMembers; i++) {
+        const name = document.getElementById(`member${i}Name`).value;
+        const gender = document.getElementById(`member${i}Gender`).value;
+
+        memberData.push({
+          name: name,
+          gender: gender
+        });
+      }
+
+      // For demonstration purposes, log the member data in the console
+      console.log('Member Data:', memberData);
+    });
+  </script>
+</body>
+</html>

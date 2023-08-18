@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="london.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>London</title>
+</head>
+<body>
+                    <!-- Header -->
+  <div class="header">
+    <div class="text-container">
+      <h1>#Memories</h1>
+    </div>
+  </div>
+
+ <!-- Navbar -->
+ <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="destination.html">Destination</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+<br><br><h1>London</h1>
+    <div class="container">
+        <div class="fitem"><img src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+        <div class="fitem"><img src="https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+        <div class="fitem"><img src="https://images.pexels.com/photos/3220846/pexels-photo-3220846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+    </div>
+    <p>London, the capital city of England, is a vibrant and cosmopolitan city that is steeped in history, culture, and diversity.
+        The city is known for its iconic landmarks, such as the Big Ben, the Tower Bridge, and the London Eye, which offer stunning
+        views of the city's skyline. London is also home to some of the world's best museums, such as the British Museum,
+        the National Gallery, and the Tate Modern, that showcase the country's rich cultural heritage. The city is also 
+        famous for its vibrant nightlife, diverse culinary scene, and world-class shopping, making it a must-visit destination
+        for anyone looking for a unique and immersive experience in Europe. With its blend of history, culture, and modernity,
+        London is a city that never fails to captivate its visitors.
+    </p>
+    <form>
+        <label for="d1">Check-In</label>&ensp;&ensp;
+        <input type="date" id="d1" >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <label for="d2">Check-Out</label>&ensp;&ensp;
+        <input type="date" id="d2" placeholder="check-out">
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label for="number">Guests</label>&ensp;&ensp;
+                <select id="number" name="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+    <br><br>
+        
+    </form>
+
+<table>
+    <tr>
+        <th id="name-hotel">Hotels</th>
+        <th id="desc-hotel">Description</th>
+        <th id="deals-hotel">Deals</th>
+    </tr>
+
+    <tr>
+        <td><img src="https://www.kimptonfitzroylondon.com/wp-content/uploads/2020/11/KFL-Exterior-1700x960-1.jpg"></td>
+        <td><p id="desc-p">1. Kimpton Fitzroy London</p><br>
+            <p id="desc-p2">
+                <span class="material-symbols-outlined">wifi</span>&ensp;Free WiFi&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;
+                <!-- <span class="material-symbols-outlined">pool</span>&ensp;Pool<br> -->
+                <span class="material-symbols-outlined">local_parking</span>&ensp;Free Parking<br>
+                <span class="material-symbols-outlined">local_bar</span>&ensp;Bar/Lounge&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;
+                <span class="material-symbols-outlined">exercise</span>&ensp;Gym<br>
+                <span class="material-symbols-outlined">local_taxi</span>&ensp;Taxi Available
+
+                <!-- <span class="material-symbols-outlined">directions_bike</span>&ensp;Bicycles available -->
+            </p>
+        </td>
+        <td><p id="deals-price">₹35,059</p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Now
+          </button>
+          
+         <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm Booking</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 
+                    <label for="upi_id">Upi Id &ensp;</label>
+                    <input type="text" id="upi_id" style="margin: 10px; width:auto; "><br>
+
+                    <label for="amount">Amount &nbsp; </label>
+                    <input type="number" id="amount" style="margin: 10px; width:auto; ">
+
+                    <br><button style="padding: 5px;width: 20%; margin: 10px; color:white; background-color: rgb(0, 102, 255); border: none; border-radius: 5px;">Pay</button>
+                    <br><br><p>Or&ensp;&ensp;&ensp;&ensp;</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <p>Or&ensp;&ensp;&ensp;&ensp;</p> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://th.bing.com/th/id/OIP.8a_I27ZmiZIueusZ2ogcrwAAAA?pid=ImgDet&w=474&h=316&rs=1" alt="Submit" width="90" height="50" >
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://lever-client-logos.s3.amazonaws.com/6521cfd0-ca15-4021-8fc8-e8b3c3e2897d-1483105254781.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://thestartuplab.in/wp-content/uploads/2020/04/20200417_135224_00043271604195887833511.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://www.estrade.in/wp-content/uploads/2016/11/drawing-3-1.jpg" alt="Submit" width="90" height="50" >
+                  
+
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div></td>
+    </tr>
+
+    <tr>
+        <td><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/3e/24/92/exterior-city-view.jpg?w=1100&h=-1&s=1"></td>
+        <td><p id="desc-p">2. Park Plaza Westminster Bridge London</p><br>
+            <p id="desc-p2">
+                <span class="material-symbols-outlined">local_parking</span>&ensp;Free Parking&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;
+                <span class="material-symbols-outlined">pool</span>&ensp;Pool<br>
+                <span class="material-symbols-outlined">wifi</span>&ensp;Free WiFi&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;
+                <span class="material-symbols-outlined">local_bar</span>&ensp;Bar/Lounge<br>
+                <span class="material-symbols-outlined">nightlife</span>&ensp;Nightclub&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;
+                <span class="material-symbols-outlined">exercise</span>&ensp;Gym
+            </p>
+        </td>
+        <td><p id="deals-price">₹25,597</p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Now
+          </button>
+          
+         <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm Booking</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 
+                    <label for="upi_id">Upi Id &ensp;</label>
+                    <input type="text" id="upi_id" style="margin: 10px; width:auto; "><br>
+
+                    <label for="amount">Amount &nbsp; </label>
+                    <input type="number" id="amount" style="margin: 10px; width:auto; ">
+
+                    <br><button style="padding: 5px;width: 20%; margin: 10px; color:white; background-color: rgb(0, 102, 255); border: none; border-radius: 5px;">Pay</button>
+                    <br><br><p>Or&ensp;&ensp;&ensp;&ensp;</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <p>Or&ensp;&ensp;&ensp;&ensp;</p> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://th.bing.com/th/id/OIP.8a_I27ZmiZIueusZ2ogcrwAAAA?pid=ImgDet&w=474&h=316&rs=1" alt="Submit" width="90" height="50" >
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://lever-client-logos.s3.amazonaws.com/6521cfd0-ca15-4021-8fc8-e8b3c3e2897d-1483105254781.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://thestartuplab.in/wp-content/uploads/2020/04/20200417_135224_00043271604195887833511.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://www.estrade.in/wp-content/uploads/2016/11/drawing-3-1.jpg" alt="Submit" width="90" height="50" >
+                  
+
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div></td>
+    </tr>
+
+    <tr>
+        <td><img src="https://i.pinimg.com/originals/96/30/bb/9630bb1f4e81a1ef69064a37a4e2aa2f.jpg"></td>
+        <td>
+            <p id="desc-p">3. The Chesterfield Mayfair</p><br>
+            <p id="desc-p2">
+                <span class="material-symbols-outlined">local_parking</span>&ensp;Paid Parking&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;
+                <span class="material-symbols-outlined">wifi</span>&ensp;Free WiFi<br>
+                <span class="material-symbols-outlined">local_bar</span>&ensp;Bar/Lounge&ensp;&ensp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                <span class="material-symbols-outlined">pool</span>&ensp;Pool
+
+            </p>
+        </td>
+        <td><p id="deals-price">₹46,259</p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Now
+          </button>
+          
+         <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm Booking</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 
+                    <label for="upi_id">Upi Id &ensp;</label>
+                    <input type="text" id="upi_id" style="margin: 10px; width:auto; "><br>
+
+                    <label for="amount">Amount &nbsp; </label>
+                    <input type="number" id="amount" style="margin: 10px; width:auto; ">
+
+                    <br><button style="padding: 5px;width: 20%; margin: 10px; color:white; background-color: rgb(0, 102, 255); border: none; border-radius: 5px;">Pay</button>
+                    <br><br><p>Or&ensp;&ensp;&ensp;&ensp;</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <p>Or&ensp;&ensp;&ensp;&ensp;</p> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://th.bing.com/th/id/OIP.8a_I27ZmiZIueusZ2ogcrwAAAA?pid=ImgDet&w=474&h=316&rs=1" alt="Submit" width="90" height="50" >
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://lever-client-logos.s3.amazonaws.com/6521cfd0-ca15-4021-8fc8-e8b3c3e2897d-1483105254781.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://thestartuplab.in/wp-content/uploads/2020/04/20200417_135224_00043271604195887833511.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://www.estrade.in/wp-content/uploads/2016/11/drawing-3-1.jpg" alt="Submit" width="90" height="50" >
+                  
+
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div></td>
+    </tr>
+
+    <tr>
+        <td><img src="https://i.pinimg.com/originals/49/2b/65/492b6534f202e1b1c64b4c99da21be98.jpg"></td>
+        <td><p id="desc-p">4. Thistle London Marble Arch</p><br>
+            <p id="desc-p2">
+                <span class="material-symbols-outlined">local_parking</span>&ensp;Free Parking&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;
+                <span class="material-symbols-outlined">wifi</span>&ensp;Free WiFi<br>
+                <span class="material-symbols-outlined">pool</span>&ensp;Pool&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&nbsp;&ensp;
+                <span class="material-symbols-outlined">security</span>&ensp;24hr Security<br>
+                <span class="material-symbols-outlined">sauna</span>&ensp;Private Sauna
+            </p>
+        </td>
+        <td><p id="deals-price">₹29,606</p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Now
+          </button>
+          
+         <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm Booking</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 
+                    <label for="upi_id">Upi Id &ensp;</label>
+                    <input type="text" id="upi_id" style="margin: 10px; width:auto; "><br>
+
+                    <label for="amount">Amount &nbsp; </label>
+                    <input type="number" id="amount" style="margin: 10px; width:auto; ">
+
+                    <br><button style="padding: 5px;width: 20%; margin: 10px; color:white; background-color: rgb(0, 102, 255); border: none; border-radius: 5px;">Pay</button>
+                    <br><br><p>Or&ensp;&ensp;&ensp;&ensp;</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <p>Or&ensp;&ensp;&ensp;&ensp;</p> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://th.bing.com/th/id/OIP.8a_I27ZmiZIueusZ2ogcrwAAAA?pid=ImgDet&w=474&h=316&rs=1" alt="Submit" width="90" height="50" >
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://lever-client-logos.s3.amazonaws.com/6521cfd0-ca15-4021-8fc8-e8b3c3e2897d-1483105254781.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://thestartuplab.in/wp-content/uploads/2020/04/20200417_135224_00043271604195887833511.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://www.estrade.in/wp-content/uploads/2016/11/drawing-3-1.jpg" alt="Submit" width="90" height="50" >
+                  
+
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div></td>
+    </tr>
+    
+    <tr>
+        <td><img src="https://i.travelapi.com/hotels/1000000/20000/11000/10939/6b5c32e5_z.jpg"></td>
+        <td><p id="desc-p">5. The Clermont, Victoria</p><br>
+            <p id="desc-p2">
+                <span class="material-symbols-outlined">local_parking</span>&ensp;Free Parking&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;
+                <span class="material-symbols-outlined">wifi</span>&ensp;Free WiFi<br>
+                <!-- <span class="material-symbols-outlined">pets</span>&ensp;Pets Allowed<br> -->
+                <!-- <span class="material-symbols-outlined">pool</span>&ensp;Pool<br> -->
+                <span class="material-symbols-outlined">security</span>&ensp;24hr Security&ensp;&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;&ensp;&ensp;&ensp;&nbsp;&ensp;
+                <span class="material-symbols-outlined">local_bar</span>&ensp;Bar/Lounge
+                <!-- <span class="material-symbols-outlined">sauna</span>&ensp;Private Sauna -->
+
+            </p>
+        </td>
+        <td><p id="deals-price">₹32,279</p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Book Now
+          </button>
+          
+         <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Confirm Booking</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 
+                    <label for="upi_id">Upi Id &ensp;</label>
+                    <input type="text" id="upi_id" style="margin: 10px; width:auto; "><br>
+
+                    <label for="amount">Amount &nbsp; </label>
+                    <input type="number" id="amount" style="margin: 10px; width:auto; ">
+
+                    <br><button style="padding: 5px;width: 20%; margin: 10px; color:white; background-color: rgb(0, 102, 255); border: none; border-radius: 5px;">Pay</button>
+                    <br><br><p>Or&ensp;&ensp;&ensp;&ensp;</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <p>Or&ensp;&ensp;&ensp;&ensp;</p> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://th.bing.com/th/id/OIP.8a_I27ZmiZIueusZ2ogcrwAAAA?pid=ImgDet&w=474&h=316&rs=1" alt="Submit" width="90" height="50" >
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://lever-client-logos.s3.amazonaws.com/6521cfd0-ca15-4021-8fc8-e8b3c3e2897d-1483105254781.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://thestartuplab.in/wp-content/uploads/2020/04/20200417_135224_00043271604195887833511.png" alt="Submit" width="90" height="50" >
+                  <input type="image" style="margin:10px; padding:5px; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; background-color: transparent;" src="https://www.estrade.in/wp-content/uploads/2016/11/drawing-3-1.jpg" alt="Submit" width="90" height="50" >
+                  
+
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div></td>
+    </tr>
+
+</table>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

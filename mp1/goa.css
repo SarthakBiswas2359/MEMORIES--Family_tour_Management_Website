@@ -1,0 +1,241 @@
+
+
+.navbar {
+  background-color: #f8f8f8;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: left;
+}
+
+/* .header .text-container h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+} */
+.text-container {
+  height: 10vh;
+  width: 10vw;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+}
+
+.text-container h1{
+  margin: 0;
+  font-size: 43px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+  h1{
+    /* text-align: left; */
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 80px;
+  }
+  .container{
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    position: relative;
+    flex-wrap: wrap;
+
+  }
+
+  .fitem{
+    margin-left: -10px;
+    padding: 20px;
+    margin: 5px;
+    width: 25%;
+    height: 30%;
+  }
+  .fitem img{
+    width: 100%;
+    height: 90%;
+    transition: 1s;
+    
+  }
+  .fitem img:hover{
+    opacity: 70%;
+  }
+  p{
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height:30px;
+    margin-left: 30px;
+
+  }
+  form{
+    margin-left: 350px;
+  }
+  form input {
+    /* margin-left: 450px; */
+    padding: 20px;
+    width: 180px;
+    border-radius: 20px;
+
+  }
+  label{
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  select{
+    border-radius: 10px;
+    padding: 8px 20px;
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+ #d1{
+    color: green;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+ }
+ #d2{
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  table{
+    margin-left: 140px;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  tr{
+    padding: 80px;
+    /* margin: 80px; */
+    box-shadow: 0 2px 4px rgba(0.3, 0.3, 0.3, 0.3);
+    width: 100px;
+    height: 120px;
+    text-align: center;
+    height: 200px;
+  }
+  th{
+    font-size: 30px;
+    /* margin: 20px; */
+    padding: 20px;
+    border-bottom: 1px solid black;
+    /* border-right: 0.2px solid grey ; */
+    font-family: sans-serif;
+
+  }
+  #name-hotel{
+    width: 300px;
+  }
+  #desc-hotel{
+    width: 550px;
+  }
+  #deals-hotel{
+    width: 250px;
+  }
+  #deals-price{
+    color: rgb(28, 186, 28);
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  td{
+    border-right: 1px solid rgb(210, 209, 209);
+    font-family: sans-serif;
+    border-right-width: 4px;
+    
+  }
+
+  button{
+    padding: 10px;
+    width: 80%;
+    border-radius: 15px;
+    margin: 10px;
+    color: orangered;
+    border: 2px solid black;
+    background-color: #fff;
+    transition: 0.8s ease;
+  }
+  button:hover{
+    transform: scale(0.9);
+    background-color: orangered;
+    border: 2px solid white;
+    color: white;
+  }
+   #desc-p{
+    text-align: left;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  #desc-p:hover{
+    text-decoration: underline;
+  }
+  #desc-p2{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  
+  td img{
+    width: 100%;
+    height: 100%;
+  }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+}
+.info-container{
+  /* border: 0.5px solid black; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: white;
+  border-radius: 8px;
+
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  /* margin-top: 50px; */
+}

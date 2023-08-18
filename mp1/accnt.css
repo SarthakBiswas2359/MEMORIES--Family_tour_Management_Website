@@ -1,0 +1,80 @@
+.navbar {
+    background-color: #f8f8f8;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar a {
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .navbar a:hover{
+    color: gold;
+  }
+  
+  
+  .header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  /* .header .text-container h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+  } */
+  .text-container {
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+  }
+  
+  .text-container h1{
+    margin: 0;
+    font-size: 43px;
+    color: rgba(225,225,225, .01);
+    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  
+    @keyframes animate {
+      0%, 100% {
+        background-position: left top;
+      }
+      25%{
+        background-position: right bottom;
+       }
+      50% {
+        background-position: left bottom;
+      }
+      75% {
+        background-position: right top;
+      }   
+  }
+    h1{
+      color: #444;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        /* margin-top: 50px; */
+      }
+    
